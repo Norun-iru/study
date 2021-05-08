@@ -1,0 +1,3 @@
+to edge :a
+  if greater? :a 0 [ fd 100 rt 90 edge :a -1]
+end
