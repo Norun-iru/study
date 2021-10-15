@@ -39,7 +39,7 @@ int main(void)
     printf("タイム順\n");
     for(j=0; j<100; ++j){
         if(time[j] > 5  && time[j] < 50){
-            printf("%.2lf秒 \n", time[j]);
+            printf("%.2lf秒 %s \n", time[j], name[j]);
         }
         
     }
