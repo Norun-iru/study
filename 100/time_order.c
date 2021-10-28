@@ -47,6 +47,7 @@ int main(void)
                 for(i=0; i <= 100; ++i){
                     if(time[j] == mem[i]){
                     printf("名前:%s 学校:%s 学年:%d年 記録日:%d日\n",name[i],school[i],grade[i],day[i]);
+                    
                 }
             }
             printf("\n");
@@ -56,4 +57,5 @@ int main(void)
         
     }
     fclose(fp);
+    return 0;
 }
