@@ -1,10 +1,10 @@
 #include <stdio.h>
 int main(void){
-  int i;
-  int s = 1;
-  for(i = 0; i < 24; i++){
-    s = s * 2 ;
-  }
-  printf("%d",s);
+  int x =15, y = 0;
+  x += 3; printf("%d",x);
+  x %= 5; printf("%d",x);
+  y = --x; printf("%d",y);
+  y = x+1; printf("%d",y);
+  printf("%d",x);
   return 0;
 }
