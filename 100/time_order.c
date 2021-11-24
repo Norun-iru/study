@@ -9,8 +9,8 @@ int main(void)
 	char	school[100][32] = { {0} };			//	学校
 	int     grade[100];			//	学年
 	double	time[100];			//	記録
-    int     day[100];           //  日  
-    
+    int     day[100];           //  日
+
     int i = 0;
 
 	//	読み込みモードでファイルを開く
@@ -24,7 +24,7 @@ int main(void)
         i++;
 	}
     printf("\n");
-    
+
     double mem[100];
     for(i = 0; i < 100; ++i){
         mem[i] = time[i];
@@ -46,15 +46,15 @@ int main(void)
             printf("タイム:%.2lf秒\n", time[j]);
                 for(i=0; i <= 100; ++i){
                     if(time[j] == mem[i]){
-                    printf("名前:%s 学校:%s 学年:%d年 記録日:%d日\n",name[i],school[i],grade[i],day[i]);
-                    
+                    printf("名前:%s 学校:%s 学年:%d年 記録日:%d\n",name[i],school[i],grade[i],day[i]);
+
                 }
             }
             printf("\n");
         }
-        
-        
-        
+
+
+
     }
     fclose(fp);
     return 0;
