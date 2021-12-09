@@ -1,10 +1,9 @@
 #include <stdio.h>
+#include <conio.h>
+#include <windows.h>
 int main(void){
-  int i;
-  int s = 1;
-  for(i = 0; i < 24; i++){
-    s = s * 2 ;
-  }
-  printf("%d",s);
+  int k;
+  k = getch();
+  printf("%d",k);
   return 0;
 }
