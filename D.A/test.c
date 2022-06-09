@@ -1,26 +1,16 @@
 #include <stdio.h>
-#include <limits.h>
 
-int  main(void){
-    int i;
-    char t, bt[100];
+int main(void){
+    int a, b;
+    printf("value=");
+    scanf("%d",&a);
 
-    printf("１文字を入力してください。\n");
-    scanf("%c, &t");
+    print("number=");
+    scanf("%d",&b);
 
-    for(i = 0; i < CHAR_BIT; i++){
-        if(t & 0x01)
-            bt[i]='1';
-        
-        else
-            bt[i]='0';
-
-        t = t >> 1;
-    }
-
-    for(i = 8; i >= 0; i--){
-        putchar(bt[i]);
-    }
-    printf("\n");
+    int c = a * b;
+    printf("%s %d \n %s %d \n %s %d", "input value", a,"input number", b, "total value", c);
+    printf("input value %d\ninput number %d\ntotal value %d ", a, b, c);
+    
     return 0;
 }
