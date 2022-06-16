@@ -15,7 +15,7 @@ int main(void){
    fgets(str1, NUM-1, fp);
    fgets(str2, NUM-1, fp);
 
-   printf("%s", str1);
+   printf("%s\n", str1);
    printf("%s", str2);
 
    fclose(fp);

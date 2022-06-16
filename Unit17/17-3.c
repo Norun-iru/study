@@ -2,15 +2,15 @@
 #include <math.h>
 
 int main(void){
-    int x;
+    double x;
     printf("実数X:");
-    scanf("%d",&x);
+    scanf("%lf",&x);
 
     double a,b;
     a = sqrt(x);
     b = pow(x,2.0);
 
-    printf("%f, %.0f", a, b);
+    printf("%f, %f", a, b);
 
     return 0;
 }

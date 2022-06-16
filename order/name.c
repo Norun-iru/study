@@ -32,8 +32,7 @@ int main(void)
     for(i = 0; i < 100; ++i){
 		
         if(strcmp(p,name[i]) == 0){
-            printf("%s, %s, %d, %.2lf, %d", name[i], school[i], grade[i], time[i], day[i]);
-			printf("a");
+            printf("名前：%s, 学校：%s, 学年：%d, 記録：%.2lf, 記録日：%d", name[i], school[i], grade[i], time[i], day[i]);
         }
     }
 	return 0;
